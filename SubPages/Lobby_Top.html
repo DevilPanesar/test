@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Button on Image</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            user-select: none;
+        }
+
+        .lobby-top {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(178, 171, 161, 1);
+        }
+
+        .content-wrapper {
+            position: relative;
+            display: inline-block;
+            /* Shrink-wrap to image */
+        }
+
+        .content-wrapper img {
+            display: block;
+            height: 100vh;
+            /* Image fills viewport height */
+            width: auto;
+            user-select: none;
+            pointer-events: none;
+        }
+
+        .touch-button {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            padding: 12px 12px;
+            font-size: 16px;
+            background: #e74c3c;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        .button1 {
+            top: 55%;
+            left: 32%;
+        }
+
+        .button2 {
+            top: 52%;
+            left: 47%;
+        }
+
+        .button3 {
+            top: 28%;
+            left: 37%;
+        }
+
+        .button4 {
+            top: 75%;
+            left: 37%;
+        }
+
+        .button5 {
+            top: 70%;
+            left: 53%;
+        }
+
+
+        .touch-button:hover {
+            background-color: #c0392b;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="lobby-top">
+        <div class="content-wrapper">
+            <img src="../images/Lobby_Top.jpg" alt="Lobby Image" />
+            <button class="touch-button button1" onclick="window.location.href='../SubPages/Lobby_1.html'"></button>
+            <button class="touch-button button2"
+                onclick="window.location.href='../SubPages/Lobby_2.html'"></button><button class="touch-button button3"
+                onclick="window.location.href='../SubPages/Lobby_Room.html'"></button>
+            <button class="touch-button button3"
+                onclick="window.location.href='../SubPages/Lobby_2.html'"></button><button class="touch-button button3"
+                onclick="window.location.href='../SubPages/Lobby_Room.html'"></button>
+            <button class="touch-button button4"
+                onclick="window.location.href='../SubPages/Lobby_2.html'"></button><button class="touch-button button3"
+                onclick="window.location.href='../SubPages/Lobby_Room.html'"></button>
+                <button class="touch-button button2"
+                onclick="window.location.href='../SubPages/Lobby_2.html'"></button><button class="touch-button button5"
+                onclick="window.location.href='../SubPages/Lobby_Room.html'"></button>
+        </div>
+    </div>
+
+</body>
+
+</html>
